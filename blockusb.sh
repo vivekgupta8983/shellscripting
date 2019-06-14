@@ -9,10 +9,10 @@
  fi 
 
 
-lsmod | grep usb_storage
-modprobe -r usb_storage
-modprobe -r uas
-lsmod | grep usb
+sudo lsmod | grep usb_storage
+sudo modprobe -r usb_storage
+sudo modprobe -r uas
+sudo lsmod | grep usb
 
 cd /lib/modules/`uname -r`/kernel/drivers/usb/storage/
-mv usb-storage.ko usb-storage.ko.blacklist
+sudo mv usb-storage.ko usb-storage.ko.blacklist
