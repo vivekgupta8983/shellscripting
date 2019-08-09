@@ -100,7 +100,7 @@ mv wordpress cloud2help
 cd /var/www/html/cloud2help/
 
 # Create a WordPress config file 
-mv wp-config-sample.php wp-config.php
+cp wp-config-sample.php wp-config.php
 
 #set database details with perl find and replace
 sed -i "s/database_name_here/cloud2help/g" /var/www/html/cloud2help/wp-config.php
